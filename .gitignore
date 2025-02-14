@@ -1,0 +1,14 @@
+# Build output
+build/
+iosevka/
+
+# Node.js
+node_modules/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Temporary files
+*.zip
+FontPatcher/
