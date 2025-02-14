@@ -1,0 +1,54 @@
+name: Build Fonts
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'Iosvmata.toml'
+      - 'bolder.py'
+      - 'run.sh'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'Iosvmata.toml'
+      - 'bolder.py'
+      - 'run.sh'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ttfautohint fontforge python3-fontforge
+
+      - name: Build Fonts
+        run: |
+          chmod +x run.sh
+          ./run.sh
+
+      - name: Upload Normal Fonts
+        uses: actions/upload-artifact@v4
+        with:
+          name: Iosvmata-Normal
+          path: build/Normal/*.ttf
+
+      - name: Upload Nerd Fonts
+        uses: actions/upload-artifact@v4
+        with:
+          name: Iosvmata-NerdFont
+          path: build/NerdFont/*.ttf

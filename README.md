@@ -1,6 +1,6 @@
 # Iosvmata
 
-![Preview](preview.webp)
+![Preview](.github/assets/preview.webp)
 
 <h2 align=center>Download</h2>
 
@@ -21,7 +21,7 @@ fatal flaw - they're way too condensed for me to use for prolonged period of
 time without eye strain.
 
 The good news is that Iosevka provides an "Extended" variant which has wider
-spacing. However it's a bit *too* wide, which takes away from the slender feel
+spacing. However it's a bit _too_ wide, which takes away from the slender feel
 of Iosevka.
 
 Iosevka however, isn't just a font family. It's more or less a full framework
@@ -34,7 +34,7 @@ like from Iosevka and PragmataPro but patch out things I don't like. Some
 notable changes (not exhaustive, see `Iosvmata.toml` for a full config):
 
 * Use a width of `550` which is just extended enough to not strain my eyes but
-  not *too* extended so that it takes away the condensed feel of
+  not _too_ extended so that it takes away the condensed feel of
   Iosevka/PragmataPro. (For reference, Iosevka Extended uses 600 and Pragmasevka
   uses 500).
 * Uses the regular slashed 0.
