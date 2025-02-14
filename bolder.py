@@ -11,17 +11,37 @@ if len(sys.argv) < 2:
 prefix = sys.argv[1]
 
 glyphs = [
-    "exclam", "ampersand", "parenleft", "parenright", "asterisk", "plus",
-    "comma", "hyphen", "period", "slash", "colon", "semicolon", "less",
-    "equal", "greater", "question", "bracketleft", "backslash", "bracketright",
-    "asciicircum", "braceleft", "bar", "braceright", "asciitilde",
+    "exclam",
+    "ampersand",
+    "parenleft",
+    "parenright",
+    "asterisk",
+    "plus",
+    "comma",
+    "hyphen",
+    "period",
+    "slash",
+    "colon",
+    "semicolon",
+    "less",
+    "equal",
+    "greater",
+    "question",
+    "bracketleft",
+    "backslash",
+    "bracketright",
+    "asciicircum",
+    "braceleft",
+    "bar",
+    "braceright",
+    "asciitilde",
 ]
 
 pairs = [
-    ['regular', 'semibold'],
-    ['italic', 'semibolditalic'],
-    ['bold', 'black'],
-    ['bolditalic', 'blackitalic'],
+    ["Regular", "SemiBold"],
+    ["Italic", "SemiBoldItalic"],
+    ["Bold", "Black"],
+    ["BoldItalic", "BlackItalic"],
 ]
 
 for [recipient, donor] in pairs:
