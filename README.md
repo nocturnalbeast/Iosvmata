@@ -68,6 +68,11 @@ to customize the config interactively.
 [ios-build]: https://github.com/be5invis/Iosevka/blob/main/doc/custom-build.md
 [NFP]: https://github.com/ryanoasis/nerd-fonts/releases/latest
 
+## Oneshot Build
+
+For an instant build, you can use the script `run.sh`, which will do the steps
+explained in the previous section in one go.
+
 ## Thanks to
 
 * [Pragmasevka][]: This project is pretty much a fork of Pragmasevka. So massive
