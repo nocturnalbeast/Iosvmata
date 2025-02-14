@@ -2,8 +2,8 @@
 family = "Iosvmata"
 spacing = "fixed"
 serifs = "sans"
-no-cv-ss = true
-export-glyph-names = false
+noCvSs= true
+exportGlyphNames = false
 
 hintParams = ["-a", "qqq"]
 
@@ -15,7 +15,7 @@ shape = 550
 menu  = 5
 css   = "normal"
 
-[buildPlans.Iosvmata.metric-override]
+[buildPlans.Iosvmata.metricOverride]
 leading = 1100
 xHeight = 550
 
@@ -24,7 +24,7 @@ capital-j = "serifed"
 f = "flat-hook-serifed"
 l = "serifed"
 zero = "slashed"
-three = "flat-top"
+three = "flat-top-serifless"
 paren = "normal"
 brace = "curly-flat-boundary"
 ampersand = "closed"
@@ -52,5 +52,5 @@ menu = 900
 css = 900
 
 [buildPlans.Iosvmata.slopes]
-upright = "default.upright"
-italic = "default.italic"
+Upright = "default.Upright"
+Italic = "default.Italic"
